@@ -40,9 +40,9 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <img src="img/logo.png">
+            <img src="img/logo.png" alt="Microsoft Logo">
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><img src="img/logo.png"></a>
+          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><img src="img/logo.png" alt="Microsoft Logo"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -51,6 +51,7 @@
               <li> <a href="#services" class="smoothscroll"> Spotlight</a></li>
             <li> <a href="#portfolio" class="smoothscroll">Products</a></li>
             <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
+            </ul>
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -59,7 +60,7 @@
 
   <!-- ==== HEADERWRAP ==== -->
   <div id="home"></div>
-  <div id="headerwrap" name="home">
+  <div id="headerwrap">
     <header class="clearfix">
       <h1>Microsoft Surface</h1>
       <p>no compromises</p>
@@ -82,7 +83,7 @@
   <!-- greywrap -->
 
   <!-- ==== ABOUT ==== -->
-  <div class="container" id="about" name="about">
+  <div class="container" id="about">
     <div class="row white">
       <br>
       <h1 class="centered">WHAT WILL YOU USE YOUR SURFACE FOR?</h1>
@@ -116,7 +117,7 @@
 
 
   <!-- ==== SERVICES ==== -->
-  <div class="container" id="services" name="services">
+  <div class="container" id="services">
     <br>
     <br>
 
@@ -146,7 +147,7 @@
   <!-- section -->
 
 <!-- ==== PORTFOLIO ==== -->
-  <div class="container" id="portfolio" name="portfolio">
+  <div class="container" id="portfolio">
     <br>
     <div class="row">
       <br>
@@ -180,7 +181,7 @@
         <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -312,7 +313,7 @@
   </section>
   <!-- section -->
 
-  <div class="container" id="contact" name="contact">
+  <div class="container" id="contact">
     <div class="row">
       <br>
       <h1 class="centered">Leave a message for the team.</h1>
@@ -324,23 +325,23 @@
       <div class="col-lg-5">
         <h3>Contact Form</h3>
         <p>Contact the team with any enquires on any Surface products, and we'll get in touch as soon as possible.</p>
-        <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+        <form class="contact-form php-mail-form" action="contactform/contactform.php" method="POST">
 
             <div class="form-group">
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+              <input type="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <input type="text" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
               <div class="validate"></div>
             </div>
 
             <div class="form-group">
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <textarea class="form-control" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
               <div class="validate"></div>
             </div>
 
